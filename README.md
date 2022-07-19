@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://www.github.com/YayoKB/fem-intro-sign-up-form)
-- Live Site URL: [GitHub Pages](https://www.yayokb.github.io/fem-intro-sign-up-form)
+- Live Site URL: [GitHub Pages](https://yayokb.github.io/fem-intro-sign-up-form/)
 
 ## My process
 
