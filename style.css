@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+
+  --blue: hsl(248, 32%, 49%);
+
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--red);
+  font-family: "Poppins", sans-serif;
+  background-image: url("./images/bg-intro-mobile.png");
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.upper-text {
+  color: white;
+  text-align: center;
+}
+
+.headline {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.desc {
+  font-weight: 400;
+  margin-bottom: 4rem;
+  line-height: 1.5;
+}
+
+.offer {
+  background-color: var(--blue);
+  width: 100%;
+  height: 5.5rem;
+  padding: 0px 3rem;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 0.5rem 0px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1.5rem;
+}
+
+.try {
+  font-weight: 600;
+}
+
+.form-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0px 0.5rem 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.form {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 1rem;
+}
+
+.form input {
+  height: 3.5rem;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.form input:focus {
+  outline: 1px solid var(--blue);
+}
+
+.input-control.error input {
+  border-color: var(--red);
+  color: var(--red);
+  background-image: url("./images/icon-error.svg");
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+}
+
+.error {
+  font-weight: 400;
+  font-style: italic;
+  color: var(--red);
+  text-align: right;
+  font-size: 0.75rem;
+}
+
+.claim-btn {
+  background-color: var(--green);
+  width: 100%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: white;
+  height: 3.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0.25rem 0px 0px hsl(154, 59%, 45%);
+  cursor: pointer;
+}
+
+.claim-btn:hover {
+  background-color: hsl(154, 59%, 60%);
+}
+
+.terms {
+  color: var(--grayish-blue);
+  font-size: 0.6875rem;
+  text-align: center;
+  line-height: 2;
+  padding: 0 1rem;
+}
+
+.TCs {
+  font-weight: 700;
+  color: var(--red);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 60rem) {
+  body {
+    background-image: url("./images/bg-intro-desktop.png");
+    background-position: bottom;
+  }
+
+  .wrapper {
+    padding: 5rem 0rem;
+  }
+
+  .container {
+    max-width: calc(0.75 * 1440px);
+    margin: auto 5rem;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .upper-text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .headline {
+    margin-top: auto;
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+
+  .desc {
+    margin-bottom: auto;
+  }
+
+  .offer {
+    height: 3.75rem;
+  }
+
+  .form-container {
+    padding: 2.5rem;
+  }
+
+  .form {
+    row-gap: 1.25rem;
+  }
+
+  .form input {
+    padding: 1.5rem 2rem;
+  }
+}
